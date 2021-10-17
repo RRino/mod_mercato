@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" client="site" method="upgrade">
+	<name>MOD_MERCATO</name>
+	<creationDate>14-11-2021</creationDate>
+	<author>Rino Ruggeri</author>
+	<authorEmail>rino.ruggeri@gmail.com</authorEmail>
+	<authorUrl>caibo.it</authorUrl>
+	<copyright>[COPYRIGHT]</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<version>0.1.0_</version>
+	<description>MOD_MERCATO_XML_DESCRIPTION</description>
+	<scriptfile>script.php</scriptfile>
+	<namespace path="src">MercatoNamespace\Module\Mercato</namespace>
+	<files>
+		<filename module="mod_mercato">mod_mercato.php</filename>
+		<folder>tmpl</folder>
+		<folder>Helper</folder>
+		<folder>language</folder>
+		<filename>mod_mercato.xml</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="mercatoparams">
+				<field
+					name="domain"
+					type="url"
+					label="MOD_MERCATO_FIELD_URL_LABEL"
+					filter="url"
+				/>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
